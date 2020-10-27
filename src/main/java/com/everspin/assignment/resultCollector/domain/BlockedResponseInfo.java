@@ -1,9 +1,11 @@
 package com.everspin.assignment.resultCollector.domain;
 
+import java.util.List;
+
 public class BlockedResponseInfo {
 
     private String result;
-    private String[] detectedListByPolicy;
+    private List<String> detectedListByPolicy;
 
     public String getResult() {
         return result;
@@ -13,11 +15,11 @@ public class BlockedResponseInfo {
         this.result = result;
     }
 
-    public String[] getDetectedListByPolicy() {
+    public List<String> getDetectedListByPolicy() {
         return detectedListByPolicy;
     }
 
-    public void setDetectedListByPolicy(String[] detectedListByPolicy) {
+    public void setDetectedListByPolicy(List<String> detectedListByPolicy) {
         this.detectedListByPolicy = detectedListByPolicy;
     }
 }

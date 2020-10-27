@@ -1,9 +1,12 @@
 package com.everspin.assignment.resultCollector.domain;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class AppRequestInfo {
 
     private String os;
-    private String[] detectedThreatList;
+    private List<String> detectedThreatList;
     private long createdAt;
 
     public String getOs() {
@@ -14,11 +17,11 @@ public class AppRequestInfo {
         this.os = os;
     }
 
-    public String[] getDetectedThreatList() {
+    public List<String> getDetectedThreatList() {
         return detectedThreatList;
     }
 
-    public void setDetectedThreatList(String[] detectedThreatList) {
+    public void setDetectedThreatList(List<String> detectedThreatList) {
         this.detectedThreatList = detectedThreatList;
     }
 
@@ -28,5 +31,14 @@ public class AppRequestInfo {
 
     public void setCreatedAt(long createdAt) {
         this.createdAt = createdAt;
+    }
+
+    @Override
+    public String toString() {
+        return "AppRequestInfo{" +
+                "os='" + os + '\'' +
+                ", detectedThreatList=" + detectedThreatList.toString() +
+                ", createdAt=" + createdAt +
+                '}';
     }
 }

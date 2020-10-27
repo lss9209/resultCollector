@@ -1,23 +1,25 @@
 package com.everspin.assignment.resultCollector.domain;
 
+import java.util.List;
+
 public class EditDetecteionList {
 
-    private String[] excludeList;
-    private String[] includeList;
+    private List<String> excludeList;
+    private List<String> includeList;
 
-    public String[] getExcludeList() {
+    public List<String> getExcludeList() {
         return excludeList;
     }
 
-    public void setExcludeList(String[] excludeList) {
+    public void setExcludeList(List<String> excludeList) {
         this.excludeList = excludeList;
     }
 
-    public String[] getIncludeList() {
+    public List<String> getIncludeList() {
         return includeList;
     }
 
-    public void setIncludeList(String[] includeList) {
+    public void setIncludeList(List<String> includeList) {
         this.includeList = includeList;
     }
 }

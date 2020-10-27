@@ -1,10 +1,12 @@
 package com.everspin.assignment.resultCollector.domain;
 
+import java.util.List;
+
 public class StatisticResponseInfo {
 
     private String os;
-    private String[] detectedThreats;
-    private String[] detectedListByPolicy;
+    private List<String> detectedThreats;
+    private List<String> detectedListByPolicy;
     private String result;
 
     public String getOs() {
@@ -15,19 +17,19 @@ public class StatisticResponseInfo {
         this.os = os;
     }
 
-    public String[] getDetectedThreats() {
+    public List<String> getDetectedThreats() {
         return detectedThreats;
     }
 
-    public void setDetectedThreats(String[] detectedThreats) {
+    public void setDetectedThreats(List<String> detectedThreats) {
         this.detectedThreats = detectedThreats;
     }
 
-    public String[] getDetectedListByPolicy() {
+    public List<String> getDetectedListByPolicy() {
         return detectedListByPolicy;
     }
 
-    public void setDetectedListByPolicy(String[] detectedListByPolicy) {
+    public void setDetectedListByPolicy(List<String> detectedListByPolicy) {
         this.detectedListByPolicy = detectedListByPolicy;
     }
 

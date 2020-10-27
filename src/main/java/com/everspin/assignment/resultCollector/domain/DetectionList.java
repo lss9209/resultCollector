@@ -1,14 +1,16 @@
 package com.everspin.assignment.resultCollector.domain;
 
+import java.util.List;
+
 public class DetectionList {
 
-    private String[] threatListToExclude;
+    private List<String> threatListToExclude;
 
-    public String[] getThreatListToExclude() {
+    public List<String> getThreatListToExclude() {
         return threatListToExclude;
     }
 
-    public void setThreatListToExclude(String[] threatListToExclude) {
+    public void setThreatListToExclude(List<String> threatListToExclude) {
         this.threatListToExclude = threatListToExclude;
     }
 }
