@@ -2,13 +2,13 @@ package com.everspin.assignment.resultCollector.repository;
 
 import com.everspin.assignment.resultCollector.domain.EditDetecteionList;
 
+import java.util.List;
+
 public interface ThreatsToDetectRepoInterface {
 
-    boolean checkIfUnlistedThreat(EditDetecteionList editDetecteionList);
+    List<String> getThreatsToDetect();
 
-    boolean checkIfConflictingReq (EditDetecteionList editDetecteionList);
+    void addThreatsToDetect(String addedThreat);
 
-    void addThreatsToDetect(EditDetecteionList editDetecteionList);
-
-    void removeThreatsToDetect(EditDetecteionList editDetecteionList);
+    void removeThreatsToDetect(String removedThreat);
 }
